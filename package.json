@@ -1,21 +1,17 @@
 {
-  "name": "semana1",
+  "name": "projeto-semana-angularjs",
   "version": "1.0.0",
-  "description": "Semana 1 AngularJS",
+  "description": "codigos semana 1 angularjs da maratona de densenvolvimento da stefanini",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Debiason/maratonaStefanini.git"
+    "url": "https://github.com/Debiason/maratonaStefanini"
   },
   "author": "Douglas Biason",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Debiason/maratonaStefanini/issues"
-  },
-  "homepage": "https://github.com/Debiason/maratonaStefanini#readme",
   "dependencies": {
     "angular": "^1.8.1",
     "grunt": "^1.3.0",
@@ -25,5 +21,6 @@
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0"
-  }
+  },
+  "devDependencies": {}
 }
