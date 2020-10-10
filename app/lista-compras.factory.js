@@ -1,23 +1,22 @@
 (function () {
     "use strict";
 
-    //Modulo
     angular.module('listaComprasApp')
-    .factory('ListaComprasFactory', listaComprasFactory);
+        .factory('ListaComprasFactory', listaComprasFactory);
 
     listaComprasFactory.$inject = [];
 
-    function listaComprasFactory(){
+    function listaComprasFactory() {
         return {
-            name:name
+            name: name
         }
 
-    //-----------------------------------------------
-
-        function name(params){
-            
+        // ======================================
+        function name(params) {
+            // implementar
         }
 
     }
-    
+
+
 })();

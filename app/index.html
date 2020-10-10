@@ -1,5 +1,4 @@
 <!doctype html>
-<!-- FALAR DO NG-APP -->
 <html lang="pt-BR" ng-app="listaComprasApp">
 
 <head>
@@ -10,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.css">
     <link rel="stylesheet" href="lista-compras.css">
-    <!--<script src="http://localhost:33729/livereload.js"></script>-->
+    <script src="http://localhost:35729/livereload.js"></script>
 
     <script src="vendor/angular/angular.js"></script>
     <script src="vendor/angular-route/angular-route.js"></script>
@@ -18,18 +17,24 @@
     <script src="lista-compras.module.js"></script>
     <script src="lista-compras.routes.js"></script>
     <script src="lista-compras.service.js"></script>
+
     <script src="utilities/constantes.js"></script>
+    <script src="utilities/filtros.js"></script>
     <script src="utilities/helper.factory.js"></script>
 
     <script src="header.controller.js"></script>
     <script src="acesso/acesso.controller.js"></script>
+
+    <script src="itens/itens.service.js"></script>
+    <script src="itens/itens.controller.js"></script>
+
+    <script src="categorias/categorias.service.js"></script>
+    <script src="categorias/categorias.controller.js"></script>
 </head>
 
 <body>
 
-    <!-- ### BARRA NEVAGAÇÃO ### -->
-
-        <header ng-include="'./header.tpl.html'"></header>
+    <header ng-include="'./header.tpl.html'"></header>
 
     <!-- ### ESPAÇO ALERTAS ### -->
     <div id="alertas" class="container" ng-show="listaMensagens.length">
@@ -41,6 +46,14 @@
             </button>
         </div>
     </div>
+
+
+    <!--
+    
+        {{vm.teste}}
+        <button ng-click="vm.teste = !vm.teste">BTN</button>
+    -->
+       
 
     <ng-view></ng-view>
 
